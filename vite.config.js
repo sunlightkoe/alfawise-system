@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // 🌟 重要：這裡設定部署到 GitHub Pages 的路徑
-  base: '/matafive/', 
+  // 修正反白關鍵：設定為相對路徑，確保 GitHub Pages 在子目錄 /matafive/ 下能正確讀取資源
+  base: './', 
 })
